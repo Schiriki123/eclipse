@@ -1,8 +1,8 @@
 package prj_box;
 
 public class Box {
-	public int y;
 	public int x;
+	public int y;
 	public int z;
 
 	public Box() {
@@ -125,9 +125,17 @@ public class Box {
 				System.out.println();
 			}
 			break;
+		case 2:
+			System.out.println("Box");
+			break;
 		}
 
 	}
+
+	public int getY() {
+		return y;
+	}
+
 	public void setY(int y) {
 		this.y = y;
 	}
@@ -144,5 +152,8 @@ public class Box {
 		return z;
 	}
 
+	public void setZ(int z) {
+		this.z = z;
+	}
 
 }
