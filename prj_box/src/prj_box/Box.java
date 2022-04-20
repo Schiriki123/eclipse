@@ -89,16 +89,9 @@ public class Box {
 					{
 						System.out.print("#");
 					}
-					else if ((j==(x_leng-x)&&(i>=(y_leng-y)))) 
-					{
-						System.out.print("#");
-					}
-					else if ((i==(y_leng-y)) && (j>=(x_leng-x))) 
-					{
-						System.out.print("#");
-					}
+					
 					else if ((j==(i)) && (i<=(y_leng-y))) {
-						System.out.print("\\");
+						System.out.print("o");
 					}
 					else if ((j==(i+(x-1)))) {
 						System.out.print("\\");
@@ -108,13 +101,21 @@ public class Box {
 					}
 					else if ((i==(y-1)) && (j<x)) 
 					{
-						System.out.print("o");
+						System.out.print("#");
 					}
 					else if ((j==(x-1)) && (i<y))
 					{
-						System.out.print("o");
+						System.out.print("#");
 					}
 					else if (j==(i-(y-x)) && (i>=y)) {
+						System.out.print("\\");
+					}
+					else if ((j==(x_leng-x)&&(i>=(y_leng-y)))) 
+					{
+						System.out.print("o");
+					}
+					else if ((i==(y_leng-y)) && (j>=(x_leng-x))) 
+					{
 						System.out.print("o");
 					}
 					else 

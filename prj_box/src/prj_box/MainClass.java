@@ -12,6 +12,7 @@ public class MainClass {
 	public static void main(String[] args) {
 		Box b1 = new Box(12,8,6);
 		b1.showBox(0);
+		b1.showBox(1);
 
 	}
 
